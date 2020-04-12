@@ -277,6 +277,20 @@ $(document).ready(function () {
     $('#showPostImg').find('img').attr('src', $(this).attr('src'));
   });
 
+  // Handle Profile Tabs
+  //==========================================
+  $('#customTabsNav li').on('click', function () {
+
+    $('#customTabsNav li').removeClass('active');
+
+    $(this).addClass('active');
+
+    $('#customTabsProfile .tab-pane').removeClass('show active');
+
+    $($(this).find('a').attr('data-toggle')).addClass('show active');
+
+  });
+
 
 
 

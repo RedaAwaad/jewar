@@ -220,12 +220,14 @@ h1 { font-size: 1.5em; margin: 10px; }
 
 .fade:not(.show) {
   opacity: 0;
-  position: absolute;
+  z-index: -1;
 }
 
 .kt-login-v2__wrapper {
   justify-content: center !important;
   width: 100% !important;
+  position: absolute;
+  z-index: 2;
 }
 
 .tab-pane {margin-top: -25px;}
@@ -234,11 +236,5 @@ h1 { font-size: 1.5em; margin: 10px; }
 
 .nav-tabs .nav-item {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
-
-/* nav-tabs .nav-link.active,
-.nav-tabs .nav-link:hover {
-  background-color: #fff !important;
-  border-radius: 20px 20px 0 0;
-}. */
