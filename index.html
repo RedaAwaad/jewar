@@ -94,6 +94,14 @@
 						<!-- begin::Aside Bottom -->
 						<div class="kt-aside__bottom">
 							<ul class="kt-aside__nav">
+								<li class="kt-aside__nav-item mb-2">
+									<a href="#" class="kt-aside__nav-link"
+									data-toggle="modal" data-target="#loginPopup"
+									data-toggle="kt-tooltip" data-title="Login" data-placement="right" 
+									data-container="body" data-boundary="window">
+										<img src="assets/media/thumb.svg" width="80" alt="jewar">
+									</a>
+								</li>
 								<li class="kt-aside__nav-item">
 									<a href="#" class="kt-aside__nav-link" id="kt_offcanvas_toolbar_search_toggler_btn">
 										<i class="flaticon2-search-1"></i>
@@ -137,21 +145,14 @@
 										</ul>
 									</div>
 								</li>
-								<li class="kt-aside__nav-item">
-									<a href="#" class="kt-aside__nav-link"
-									data-toggle="modal" data-target="#loginPopup"
-									data-toggle="kt-tooltip" data-title="Login" data-placement="right" 
-									data-container="body" data-boundary="window">
-										<i class="flaticon-user-ok fa-2x"></i>
-									</a>
-								</li>
-								<li class="kt-aside__nav-item">
+								
+								<!-- <li class="kt-aside__nav-item">
 									<a href="#" class="kt-aside__nav-link" 
 									data-toggle="kt-tooltip" data-title="Register" data-placement="right" 
 									data-container="body" data-boundary="window">
 										<i class="flaticon-user-add fa-2x"></i>
 									</a>
-								</li>
+								</li> -->
 								<!-- <li class="kt-aside__nav-item">
 									<a href="#" class="kt-aside__nav-link" id="kt_offcanvas_toolbar_profile_toggler_btn">
 										<i class="flaticon2-hourglass-1 kt-hidden"></i>
@@ -813,77 +814,156 @@
 								<!-- Model For Login And Register Form -->
 								<div class="modal fade" id="loginPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-modal="true">
 									<div class="modal-dialog modal-dialog-centered" style="max-width: 100%;" role="document">
-											<div class="modal-content bg-white" style="flex-direction: row;justify-content: center; background: transparent; border: 0;">
-												<div class="kt-grid kt-grid--ver kt-grid--root">
+											<div class="modal-content" style="flex-direction: row;justify-content: center; background: transparent; border: 0;">
+												<div class="kt-grid kt-grid--ver kt-grid--root"  style="height: 110vh;">
 													<div class="kt-grid__item   kt-grid__item--fluid kt-grid  kt-grid kt-grid--hor kt-login-v2" id="kt_login_v2">
 										
 														<!--begin::Item-->
 														<div class="kt-grid__item  kt-grid  kt-grid--ver  kt-grid__item--fluid">
-										
+															
 															<!--begin::Body-->
-															<div class="kt-login-v2__body" style="padding: 3rem">
-										
-																<!--begin::Wrapper-->
-																<div class="kt-login-v2__wrapper w-75">
-																	<div class="kt-login-v2__container">
-																		<div class="kt-login-v2__title">
-																			<h3>Sign to Account</h3>
+															<div class="kt-login-v2__body d-block" style="padding: 3rem;">
+																<div class="kt-profile__nav d-flex justify-content-center">
+																	<!--begin::Tabs-->
+																	<ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
+																		<li class="nav-item">
+																			<a class="nav-link active text-dark" data-toggle="tab" href="#kt_tabs_1_1" role="tab">Login</a>
+																		</li>
+																		<li class="nav-item">
+																			<a class="nav-link text-dark" data-toggle="tab" href="#kt_tabs_1_2" role="tab">Register</a>
+																		</li>
+																	</ul>
+																	<!--end::Tabs-->
+																</div>
+																<!-- <div class="tab-content"> -->
+																	<div class="tab-pane fade show active" id="kt_tabs_1_1" role="tabpanel">
+																		<!--begin::Wrapper-->
+																		<div class="kt-login-v2__wrapper">
+																			<div class="kt-login-v2__container">
+																				<div class="kt-login-v2__title">
+																					<h3>Sign to Account</h3>
+																				</div>
+												
+																				<!--begin::Form-->
+																				<form class="kt-login-v2__form kt-form" action="" autocomplete="off">
+																					<div class="form-group">
+																						<input class="form-control" type="text" placeholder="Username" name="username" autocomplete="off">
+																					</div>
+																					<div class="form-group">
+																						<input class="form-control" type="password" placeholder="Password" name="password" autocomplete="off">
+																					</div>
+												
+																					<!--begin::Action-->
+																					<div class="kt-login-v2__actions">
+																						<a href="#" class="kt-link kt-link--brand">
+																							Forgot Password ?
+																						</a>
+																						<!-- You have to make a Submit Button Instead -->
+																						<a href="loggedin.html" class="btn btn-brand btn-elevate btn-pill">Sign In</a>
+																					</div>
+												
+																					<!--end::Action-->
+																				</form>
+												
+																				<!--end::Form-->
+												
+																				<!--begin::Separator-->
+																				<div class="kt-separator kt-separator--space-lg  kt-separator--border-solid"></div>
+												
+																				<!--end::Separator-->
+												
+																				<!--begin::Options-->
+																				<h3 class="kt-login-v2__desc">Or sign with social account</h3>
+																				<div class="kt-login-v2__options">
+																					<a href="#" class="btn btn-facebook btn-pill">
+																						<i class="fab fa-facebook-f"></i>
+																						Facebook
+																					</a>
+																					<a href="#" class="btn btn-twitter btn-pill">
+																						<i class="fab fa-twitter"></i>
+																						Twitter
+																					</a>
+																					<a href="#" class="btn btn-google btn-pill">
+																						<i class="fab fa-google"></i>
+																						Google
+																					</a>
+																				</div>
+												
+																				<!--end::Options-->
+																			</div>
 																		</div>
-										
-																		<!--begin::Form-->
-																		<form class="kt-login-v2__form kt-form" action="" autocomplete="off">
-																			<div class="form-group">
-																				<input class="form-control" type="text" placeholder="Username" name="username" autocomplete="off">
-																			</div>
-																			<div class="form-group">
-																				<input class="form-control" type="password" placeholder="Password" name="password" autocomplete="off">
-																			</div>
-										
-																			<!--begin::Action-->
-																			<div class="kt-login-v2__actions">
-																				<a href="#" class="kt-link kt-link--brand">
-																					Forgot Password ?
-																				</a>
-																				<!-- You have to make a Submit Button Instead -->
-																				<a href="loggedin.html" class="btn btn-brand btn-elevate btn-pill">Sign In</a>
-																			</div>
-										
-																			<!--end::Action-->
-																		</form>
-										
-																		<!--end::Form-->
-										
-																		<!--begin::Separator-->
-																		<div class="kt-separator kt-separator--space-lg  kt-separator--border-solid"></div>
-										
-																		<!--end::Separator-->
-										
-																		<!--begin::Options-->
-																		<h3 class="kt-login-v2__desc">Or sign with social account</h3>
-																		<div class="kt-login-v2__options">
-																			<a href="#" class="btn btn-facebook btn-pill">
-																				<i class="fab fa-facebook-f"></i>
-																				Facebook
-																			</a>
-																			<a href="#" class="btn btn-twitter btn-pill">
-																				<i class="fab fa-twitter"></i>
-																				Twitter
-																			</a>
-																			<a href="#" class="btn btn-google btn-pill">
-																				<i class="fab fa-google"></i>
-																				Google
-																			</a>
-																		</div>
-										
-																		<!--end::Options-->
+																		<!--end::Wrapper-->
 																	</div>
-																</div>
-																<!--end::Wrapper-->
-										
+																	<div class="tab-pane fade" id="kt_tabs_1_2" role="tabpanel">
+																			<!--begin::Wrapper-->
+						<div class="kt-login-v2__wrapper">
+							<div class="kt-login-v2__container">
+								<div class="kt-login-v2__title">
+									<h3>Add a New Account</h3>
+								</div>
+
+								<!--begin::Form-->
+								<form class="kt-login-v2__form kt-form pb-0" action="" autocomplete="off">
+									<div class="form-group">
+										<input class="form-control" type="text" placeholder="Username" name="username" autocomplete="off">
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="email" placeholder="E-mail" name="email" autocomplete="off">
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="password" placeholder="Password" name="password" autocomplete="off">
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="off">
+									</div>
+
+									<!--begin::Action-->
+									<div class="kt-login-v2__actions">
+										<a href="index.html" class="kt-link kt-link--brand">
+											You have an account ?
+										</a>
+										<!-- You have to make a Submit Button Instead -->
+										<a href="#" class="btn btn-brand btn-elevate btn-pill">Sign Up</a>
+									</div>
+
+									<!--end::Action-->
+								</form>
+
+								<!--end::Form-->
+
+								<!--begin::Separator-->
+								<div class="kt-separator kt-separator--space-lg  kt-separator--border-solid"></div>
+
+								<!--end::Separator-->
+
+								<!--begin::Options-->
+								<h3 class="kt-login-v2__desc">Or sign with social account</h3>
+								<div class="kt-login-v2__options">
+									<a href="#" class="btn btn-facebook btn-pill">
+										<i class="fab fa-facebook-f"></i>
+										Facebook
+									</a>
+									<a href="#" class="btn btn-twitter btn-pill">
+										<i class="fab fa-twitter"></i>
+										Twitter
+									</a>
+									<a href="#" class="btn btn-google btn-pill">
+										<i class="fab fa-google"></i>
+										Google
+									</a>
+								</div>
+
+								<!--end::Options-->
+							</div>
+						</div>
+
+						<!--end::Wrapper-->
+																	</div>
+																<!-- </div> -->
 																<!--begin::Image-->
-																<div class="kt-login-v2__image d-none d-lg-block">
+																<!-- <div class="kt-login-v2__image d-none d-lg-block">
 																	<img src="assets/media/login.bg.svg" alt="Login to Jewar">
-																</div>
+																</div> -->
 										
 																<!--begin::Image-->
 															</div>
