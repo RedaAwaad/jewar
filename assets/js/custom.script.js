@@ -291,6 +291,16 @@ $(document).ready(function () {
 
   });
 
+  // Toggle Between Login and Register
+  //====================================
+  $('.login-control').on('click', function () {
+
+    $('.login-control-container').removeClass('show active');
+
+    $($(this).attr('data-toggle')).addClass('show active');
+
+  });
+
 
 
 
