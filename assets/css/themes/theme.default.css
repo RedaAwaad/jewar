@@ -1,0 +1,92 @@
+.chatbox input.form-control {color: #15365a;}
+
+.chatbox input.form-control:focus {border-color: #15365a;}
+
+.chatbox__head {background: #15365a;}
+
+.chatbox .btn.btn-icon:hover {color: #15365a;}
+
+.chatbox .btn.btn-upload-close,
+.chatbox .btn.btn-report-close,
+.chatbox .btn.btn-register-close {color: #15365a;}
+
+.chatbox .btn.btn-upload-close:hover,
+.chatbox .btn.btn-report-close:hover,
+.chatbox .btn.btn-register-close:hover {background: #15365a;}
+
+.report-choices>input:checked~.custom-radio {border-color:#15365a;}
+
+.report-choices>.custom-radio:after {border: solid #15365a;background: #15365a;}
+
+.chatbox__report--body .submit-report-btn,
+.chatbox__register--body .submit-register-btn {background-color: #15365a;}
+
+.chatbox__report--body .submit-report-btn:hover,
+.chatbox__register--body .submit-register-btn:hover {background-color: #447ebc;}
+
+.chatbox .chatbox-nav__head {background: #15365a;}
+
+.chatbox .chatbox-nav__link:hover {
+  background-color: rgba(10,187,135,.1);
+  color: #15365a;
+}
+
+.chatbox .chatbox-nav__link:hover path {fill: #15365a;}
+
+.simplebar-scrollbar::before {background: #15365a;}
+
+.chatbox .chatbox__message {background: rgba(10,187,135,.1);}
+
+.chatbox__message.chatbox__message--user {background-color: rgba(0,0,0,.05);}
+
+.chatbox .chatbox__message .chatbox__datetime {color: #74788d;}
+
+.chatbox .chatbox__typing span {background-color: #15365a;}
+
+.chatbox__message .chatbox__text {color: #6c7293;}
+
+.chatbox__options .chatbox__options--btn,
+.chatbox__options .register__option {
+  color: #15365a;
+  border: 1px solid #447ebc;
+}
+
+.add-new-line svg path {fill: #15365a;}
+
+.chatbox .chatbot__output .chatbox-tag {
+  background-color: #15365a;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.chatbox .chatbot__output .chatbox-tag:hover {
+  background-color: #fff;
+  color: #15365a;
+  border-color: #15365a;
+}
+
+.chatbox__foot .add-new-line.new-line-available,
+.chatbox .chatbox__foot .add-new-line:hover {background-color: #15365a;}
+
+.chatbox .chatbox__editor textarea {color: #15365a;}
+
+.chatbox .chatbox__tools .media--icon {color: #15365a;}
+
+.chatbox .chatbox__tools .media--icon:hover {color: #3758ff;background: #f0f3ff;}
+
+.chatbox .chatbox__actions .chatbox__reply,
+.chatbox .chatbox__upload-image--body .chatbox__reply {
+  background-color: #15365a;
+  border-color: #15365a;
+}
+
+.chatbox__actions .chatbox__reply path {fill: #15365a;}
+
+.chatbox__actions .chatbox__reply:hover path {fill: #447ebc;}
+
+.chatbox .chatbox__upload-image--body .chatbox__reply:hover {
+  background-color: #447ebc;
+  border-color: #447ebc;
+}
+
+.chatbox .color-schema-container svg path {fill: #15365a;}

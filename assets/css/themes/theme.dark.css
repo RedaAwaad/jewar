@@ -1,0 +1,100 @@
+.chatbox input.form-control {color: #1c1c2b;}
+
+.chatbox input.form-control:focus {border-color: #1c1c2b;}
+
+.chatbox__head {background: #1c1c2b;}
+
+.chatbox .btn.btn-icon:hover {color: #1c1c2b;}
+
+.chatbox .btn.btn-upload-close,
+.chatbox .btn.btn-report-close,
+.chatbox .btn.btn-register-close {color: #1c1c2b;}
+
+.chatbox .btn.btn-upload-close:hover,
+.chatbox .btn.btn-report-close:hover,
+.chatbox .btn.btn-register-close:hover {
+  background: #1c1c2b;
+  color: #fff;
+}
+
+.chatbox__upload-image--body .custom-file-label {background-color: #1c1c2b;}
+
+.chatbox .btn-clean.closeChatbox:hover rect,
+.chatbox .btn-clean.showDropdown:hover path {fill: #494b74;}
+
+.report-choices>input:checked~.custom-radio {border-color:#1c1c2b;}
+
+.report-choices>.custom-radio:after {
+  border: solid #1c1c2b;
+  background: #1c1c2b;
+}
+
+.chatbox__report--body .submit-report-btn,
+.chatbox__register--body .submit-register-btn {background-color: #1c1c2b;}
+
+.chatbox__report--body .submit-report-btn:hover,
+.chatbox__register--body .submit-register-btn:hover {background-color: #494b74;}
+
+.chatbox .chatbox-nav__head {background: #1c1c2b;}
+
+.chatbox .chatbox-nav__link:hover {
+  background-color: rgba(10,187,135,.1);
+  color: #1c1c2b;
+}
+
+.add-new-line svg path {fill: #1c1c2b;}
+
+.chatbox .chatbox-nav__link path {fill: #1c1c2b;}
+
+.simplebar-scrollbar::before {background: #1c1c2b;}
+
+.chatbox .chatbox__message {background: rgba(10,187,135,.1);}
+
+.chatbox__message.chatbox__message--user {background-color: rgba(0,0,0,.05);}
+
+.chatbox .chatbox__message .chatbox__datetime {color: #74788d;}
+
+.chatbox .chatbox__typing span {background-color: #1c1c2b;}
+
+.chatbox__message .chatbox__text {color: #6c7293;}
+
+.chatbox__options .chatbox__options--btn,
+.chatbox__options .register__option {color: #1c1c2b;border: 1px solid #494b74;}
+
+.chatbox .chatbot__output .chatbox-tag {
+  background-color: #1c1c2b;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.chatbox .chatbot__output .chatbox-tag:hover {
+  background-color: #fff;
+  color: #1c1c2b;
+  border-color: #1c1c2b;
+}
+
+.chatbox__foot .add-new-line.new-line-available,
+.chatbox .chatbox__foot .add-new-line:hover {background-color: #1c1c2b;}
+
+.chatbox .chatbox__editor textarea {color: #1c1c2b;}
+
+.chatbox .chatbox__tools .media--icon {color: #1c1c2b;}
+
+.chatbox .chatbox__tools .media--icon:hover {color: #494b74;background: #f0f3ff;}
+
+.chatbox .chatbox__actions .chatbox__reply,
+.chatbox .chatbox__upload-image--body .chatbox__reply {
+  background-color: #1c1c2b;
+  border-color: #1c1c2b;
+}
+
+.chatbox__actions .chatbox__reply path {fill: #1c1c2b;}
+
+.chatbox__actions .chatbox__reply:hover path {fill: #494b74;}
+
+.chatbox .chatbox__upload-image--body .chatbox__reply:hover {
+  background-color: #494b74;
+  border-color: #494b74;
+}
+
+.chatbox .color-schema-container svg path {fill: #1c1c2b;}

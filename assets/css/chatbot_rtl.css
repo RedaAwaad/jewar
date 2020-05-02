@@ -1,0 +1,58 @@
+.chatbox__open--box {left: 25px;right: auto;}
+
+.chatbox__open--box .chatbot__welcome {right: auto;left: 60px;} /* Welcome Message*/
+
+.chatbox {right: auto;left: 25px;direction: ltr !important;}
+
+@media (max-width: 500px) {.chatbox {left: 0;}}
+
+@media (max-width: 400px) {.chatbox.chatbox__open {z-index: 999;}}
+
+.chatbox__head {direction: rtl;}
+
+.chatbox__head .chatbox__left {text-align: right;}
+
+.chatbox__head .chatbox__right {text-align: left;}
+
+.chatbox .dropdown-menu {left: 0;right: auto;}
+
+.chatbox .chatbox-nav__link .chatbox-nav__link-text {margin-left: auto;margin-right: 5px;}
+
+.chatbox .chatbox__body {direction: ltr !important;}
+
+.chatbox .chatbox__foot {direction: rtl;}
+
+.emoji__container .btn-icon, .chatbox__upload-image--container .btn-icon, 
+.chatbox__report--container .btn-icon, 
+.chatbox__register--container .btn-icon {
+	float: left;
+  margin: 5px;
+  margin-right: 0;
+}
+
+.chatbox .chatbox__register--body,
+.chatbox .chatbox__report--body {direction: rtl;}
+
+.chatbox .chatbox__report--body .choices-btns {text-align: right;}
+
+.chatbox .chatbox-nav__link.color-schema-container {
+  text-align: right;
+}
+
+.chatbox .chatbox-nav__link-text .color-schema.default {
+  margin-left: 8px;
+  margin-right: -5px;
+}
+
+.chatbox .shown-link {
+  left: auto; right: 30px;
+}
+
+.chatbox .hidden-link {
+  left: auto;
+  right: -100%;
+}
+
+.chatbox-nav__link.color-schema-container.show .shown-link {right: -100%; left: auto;}
+
+.chatbox-nav__link.color-schema-container.show .hidden-link {right: 30px; left: auto;}

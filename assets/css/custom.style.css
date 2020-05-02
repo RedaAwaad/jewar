@@ -230,6 +230,10 @@ h1 { font-size: 1.5em; margin: 10px; }
   z-index: 2;
 }
 
+.services_page_cards .kt-widget__head img {
+  object-fit: cover;
+}
+
 .tab-pane {margin-top: -25px;}
 
 .nav-tabs .nav-link {border-radius: 5px 5px 0 0;}
@@ -239,19 +243,20 @@ h1 { font-size: 1.5em; margin: 10px; }
   z-index: 3;
 }
 
-.kt-login-v2__body.login_page_container {
+.kt-login-v2__body.login_page_container,
+.kt-login-v2__body .kt-login-v2__container {
   position: relative;
 }
 
 .kt-login-v2__body.login_page_container .close_login {
   position: absolute;
-  top: 35px;
-  left: 0;
+  top: -10px;
+  left: -13px;
   z-index: 99;
   background-color: #fd397a;
   color: #fff;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -284,3 +289,4 @@ svg.login_thump:hover .white {
 svg.login_thump:hover path:not(.white) {
   opacity: 0.3;
 }
+
