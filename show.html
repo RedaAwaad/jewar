@@ -1468,18 +1468,12 @@
 				<span class="kt-badge kt-badge--danger">4</span>
 				<i class="flaticon-app fa-lg text-primary"></i>
 			</li>
-			<!-- <li class="kt-sticky-toolbar__item kt-sticky-toolbar__item--builder" data-toggle="kt-tooltip" title="Layout Builder" data-placement="left">
-				<a href="#"><i class="flaticon2-box"></i></a>
-			</li>
-			<li class="kt-sticky-toolbar__item kt-sticky-toolbar__item--docs" data-toggle="kt-tooltip" title="Documentation" data-placement="left">
-				<a href="#"><i class="flaticon2-file"></i></a>
-			</li> -->
 		</ul>
 		<!-- end:: Demo Toolbar -->
 
 		<!-- begin:: Chatbox Model -->
 		<div class="modal fade" id="chatboxModelShow" tabindex="-1">
-			<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="exampleModalLongTitle">Chat Messanger</h5>
@@ -1488,193 +1482,54 @@
 						</button>
 					</div>
 					<div class="modal-body p-0">
-										<!-- Chatbot Container -->
-						<div class="chatbox chatbox__open" lang="en" id="chatboxContainer">
-							<div class="container">
-				<!-- ========================= Chatbox Head Container ========================== -->
-									<!-- <div class="chatbox__head chatbox__head--style">
-											<div class="chatbox__left">
-													<div class="chatbox__label">
-															<span class="mujib-logo">
-																	<img src="assets/media/users/300_12.jpg" width="40" alt="Mujib">
-															</span>
-															<span class="chatbox__title mx-2" data-lang="مجيب">Mujib</span>
-															<span class="chatbox-badge"></span> <span data-lang="نشط الآن">Active</span>
-													</div>
-											</div>
-											<div class="chatbox__right">
-													<div class="dropdown dropdown-inline" >
-													<button type="button" id="chatboxDropdownToggle" class="btn btn-clean showDropdown btn-sm btn-icon" aria-haspopup="true" aria-expanded="false">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<rect x="0" y="0" width="24" height="24"/>
-																			<path d="M5,5 L19,5 C19.5522847,5 20,5.44771525 20,6 C20,6.55228475 19.5522847,7 19,7 L5,7 C4.44771525,7 4,6.55228475 4,6 C4,5.44771525 4.44771525,5 5,5 Z M5,13 L19,13 C19.5522847,13 20,13.4477153 20,14 C20,14.5522847 19.5522847,15 19,15 L5,15 C4.44771525,15 4,14.5522847 4,14 C4,13.4477153 4.44771525,13 5,13 Z" fill="#ccc" opacity="0.3"/>
-																			<path d="M11,9 L19,9 C19.5522847,9 20,9.44771525 20,10 C20,10.5522847 19.5522847,11 19,11 L11,11 C10.4477153,11 10,10.5522847 10,10 C10,9.44771525 10.4477153,9 11,9 Z M11,17 L19,17 C19.5522847,17 20,17.4477153 20,18 C20,18.5522847 19.5522847,19 19,19 L11,19 C10.4477153,19 10,18.5522847 10,18 C10,17.4477153 10.4477153,17 11,17 Z" fill="#fff"/>
-																	</g>
-															</svg>
-													</button>
-													<div class="dropdown-menu" id="chatboxDropdown">
-															<ul class="chatbox-nav">
-																	<li class="chatbox-nav__head">
-																			<span>Messaging</span>
-																			<i class="fas fa-info-circle" ></i>
-																	</li>
-																	<li class="chatbox-nav__separator"></li>
-																	<li class="chatbox-nav__item">
-																			<div id="changeLanguage" class="chatbox-nav__link">
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-																							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																									<rect x="0" y="0" width="24" height="24"/>
-																									<path d="M13,18.9450712 L13,20 L14,20 C15.1045695,20 16,20.8954305 16,22 L8,22 C8,20.8954305 8.8954305,20 10,20 L11,20 L11,18.9448245 C9.02872877,18.7261967 7.20827378,17.866394 5.79372555,16.5182701 L4.73856106,17.6741866 C4.36621808,18.0820826 3.73370941,18.110904 3.32581341,17.7385611 C2.9179174,17.3662181 2.88909597,16.7337094 3.26143894,16.3258134 L5.04940685,14.367122 C5.46150313,13.9156769 6.17860937,13.9363085 6.56406875,14.4106998 C7.88623094,16.037907 9.86320756,17 12,17 C15.8659932,17 19,13.8659932 19,10 C19,7.73468744 17.9175842,5.65198725 16.1214335,4.34123851 C15.6753081,4.01567657 15.5775721,3.39010038 15.903134,2.94397499 C16.228696,2.49784959 16.8542722,2.4001136 17.3003976,2.72567554 C19.6071362,4.40902808 21,7.08906798 21,10 C21,14.6325537 17.4999505,18.4476269 13,18.9450712 Z" fill="#15365a" fill-rule="nonzero"/>
-																									<circle fill="#000000" opacity="0.3" cx="12" cy="10" r="6"/>
-																							</g>
-																					</svg>
-																					<span class="chatbox-nav__link-text" data-lang="English" lang="en">عربى</span>
-																			</div>
-																	</li>
-															</ul>
-													</div>
-													</div>
-													<button type="button" id="closeChatboxContainer" class="btn btn-clean closeChatbox btn-sm btn-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<g transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="#fff">
-																					<rect x="0" y="7" width="16" height="2" rx="1"/>
-																					<rect opacity="0.3" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) " x="0" y="7" width="16" height="2" rx="1"/>
-																			</g>
-																	</g>
-															</svg>
-													</button>
-											</div>
-									</div> -->
-									<div class="chatbox__body">
-				<!-- ========================= Chatbox Body Container ========================== -->
-											<div class="chatbot-scroll" data-simpleba id="chatbotScroll">
-													<div class="chatbox__messages kt-chat__messages--solid" id="chatboxMessages">
-															<div class="chatbox__message chatbox__message--bot">
-																	<div class="chatbox__user">
-																			<span class="chatbox__user--media">
-																					<img src="/assets/images/mujib_logo.svg" width="40" alt="Mujib">
-																			</span>
-																			<span class="chatbox__datetime">30 <span data-lang="ثانية">Seconds</span></span>
-																	</div>
-																	<div class="chatbox__text">Hello, How Can I help?</div>
-																	<div class="chatbox__options">
-																	<button class="btn chatbox__options--btn">
-																	<span class="btn-text">Recommend</span>
-																			<img src="/assets/images/beautiful-flower-48.png" width="30" alt="image">
-																	</button>
-																	<button class="btn chatbox__options--btn">
-																			<span class="btn-text">Anything else!</span>
-																			<img src="/assets/images/lightning-bolt-96.png" width="30" alt="image">
-																	</button>
-																	<button class="btn chatbox__options--btn">
-																			<span class="btn-text">Ok</span>
-																			<img src="/assets/images/guarantee-64.png" width="30" alt="image">
-																	</button>
-																	<button class="btn register__option">
-																			<span class="btn-text" data-lang="تسجيل">Register</span>
-																	</button>
-																	</div>
-															</div><div class="clear-fix"></div>
-													</div>
+						<div class="chatbox" lang="en" id="chatboxContainer">
+							<div class="chatbox__body">
+		<!-- ========================= Chatbox Body Container ========================== -->
+									<div class="chatbot-scroll" data-simpleba id="chatbotScroll">
+											<div class="chatbox__messages kt-chat__messages--solid" id="chatboxMessages">
+													<div class="chatbox__message chatbox__message--bot">
+															<div class="chatbox__user">
+																	<span class="chatbox__user--media">
+																			<img src="/assets/media/users/100_1.jpg" width="40" alt="jewar">
+																	</span>
+																	<span class="chatbox__datetime">30 <span>Seconds</span></span>
+															</div>
+															<div class="chatbox__text">Hello, How Can I help?</div>
+													</div><div class="clear-fix"></div>
 											</div>
 									</div>
+							</div>
 				<!-- ========================= Chatbox Footer Container ========================== -->
-									<div class="chatbox__foot">
-											<div class="chatbot__output"></div>
-											<div class="chatbox__input">
-													<div class="chatbox__editor">
-															<textarea id="msgFromUser" data-placeholder="أكتب هنا..." placeholder="Type here..."></textarea>
+							<div class="chatbox__foot">
+									<div class="chatbox__input">
+											<div class="chatbox__editor">
+													<input type="text" autofocus id="msgFromUser" placeholder="Type here...">
+											</div>
+											<div class="chatbox__toolbar">
+													<div class="chatbox__tools">
+															<i class="fas fa-images media--icon" id="uploadImgBtn"></i>
 													</div>
-													<div class="chatbox__toolbar">
-															<div class="chatbox__tools">
-																	<i class="fas fa-images media--icon" id="uploadImgBtn"></i>
-																	<i class="fas fa-camera media--icon"></i>
-																	<i class="fas fa-microphone media--icon"></i>
-																	<i class="fas fa-smile media--icon" id="emojiBtn"></i>
-																	<div class="add-new-line" title="active new line">
-																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-																					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24"/>
-																							<path d="M8.5,8 L8.5,18 C8.5,18.5522847 8.05228475,19 7.5,19 L6.5,19 C5.94771525,19 5.5,18.5522847 5.5,18 L5.5,8 L2,8 C1.44771525,8 1,7.55228475 1,7 L1,6 C1,5.44771525 1.44771525,5 2,5 L12,5 C12.5522847,5 13,5.44771525 13,6 L13,7 C13,7.55228475 12.5522847,8 12,8 L8.5,8 Z" fill="#000000" opacity="0.3"/>
-																							<path d="M20,16.5857864 L21.2928932,15.2928932 C21.6834175,14.9023689 22.3165825,14.9023689 22.7071068,15.2928932 C23.0976311,15.6834175 23.0976311,16.3165825 22.7071068,16.7071068 L19.7071068,19.7071068 C19.3165825,20.0976311 18.6834175,20.0976311 18.2928932,19.7071068 L15.2928932,16.7071068 C14.9023689,16.3165825 14.9023689,15.6834175 15.2928932,15.2928932 C15.6834175,14.9023689 16.3165825,14.9023689 16.7071068,15.2928932 L18,16.5857864 L18,7.41421356 L16.7071068,8.70710678 C16.3165825,9.09763107 15.6834175,9.09763107 15.2928932,8.70710678 C14.9023689,8.31658249 14.9023689,7.68341751 15.2928932,7.29289322 L18.2928932,4.29289322 C18.6834175,3.90236893 19.3165825,3.90236893 19.7071068,4.29289322 L22.7071068,7.29289322 C23.0976311,7.68341751 23.0976311,8.31658249 22.7071068,8.70710678 C22.3165825,9.09763107 21.6834175,9.09763107 21.2928932,8.70710678 L20,7.41421356 L20,16.5857864 Z" fill="#15365a"/>
-																					</g>
-																			</svg>
-																	</div>
-															</div>
-															<div class="chatbox__actions">
-																	<button type="button" id="submitReplyBtn" class="btn btn-brand btn-font-sm chatbox__reply">
-																			<svg id="sendingButtonSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-																					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24"/>
-																							<path d="M4.88230018,17.2353996 L13.2844582,0.431083506 C13.4820496,0.0359007077 13.9625881,-0.12427877 14.3577709,0.0733126292 C14.5125928,0.15072359 14.6381308,0.276261584 14.7155418,0.431083506 L23.1176998,17.2353996 C23.3152912,17.6305824 23.1551117,18.1111209 22.7599289,18.3087123 C22.5664522,18.4054506 22.3420471,18.4197165 22.1378777,18.3482572 L14,15.5 L5.86212227,18.3482572 C5.44509941,18.4942152 4.98871325,18.2744737 4.84275525,17.8574509 C4.77129597,17.6532815 4.78556182,17.4288764 4.88230018,17.2353996 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.000087, 9.191034) rotate(-315.000000) translate(-14.000087, -9.191034) "/>
-																					</g>
-																			</svg>
-																	</button>
-															</div>
+													<div class="chatbox__actions">
+															<button type="button" id="submitReplyBtn" class="btn btn-brand btn-font-sm chatbox__reply">
+																	<svg id="sendingButtonSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+																			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																					<rect x="0" y="0" width="24" height="24"/>
+																					<path d="M4.88230018,17.2353996 L13.2844582,0.431083506 C13.4820496,0.0359007077 13.9625881,-0.12427877 14.3577709,0.0733126292 C14.5125928,0.15072359 14.6381308,0.276261584 14.7155418,0.431083506 L23.1176998,17.2353996 C23.3152912,17.6305824 23.1551117,18.1111209 22.7599289,18.3087123 C22.5664522,18.4054506 22.3420471,18.4197165 22.1378777,18.3482572 L14,15.5 L5.86212227,18.3482572 C5.44509941,18.4942152 4.98871325,18.2744737 4.84275525,17.8574509 C4.77129597,17.6532815 4.78556182,17.4288764 4.88230018,17.2353996 Z" fill="#3699ff" fill-rule="nonzero" transform="translate(14.000087, 9.191034) rotate(-315.000000) translate(-14.000087, -9.191034) "/>
+																			</g>
+																	</svg>
+															</button>
 													</div>
 											</div>
 									</div>
+							</div>
 				<!-- ========================= Register Form Container ========================== -->
 							<div class="popup-container">
-									<div class="chatbox__register--container p-3" id="registerContainer">
-											<button type="button" id="cancelRegister" class="btn btn-clean btn-sm btn-icon btn-register-close" aria-haspopup="true" aria-expanded="false">
-													<i class="fas fa-times"></i>
-											</button>
-											<div class="chatbox__register--body p-3 pt-5">
-													<form >
-															<div class="chatbox__editor pt-5 mt-4">
-																	<div class="form-group">
-																			<input type="text" required class="form-control" data-placeholder="الاسم بالكامل" placeholder="Fullname">
-																	</div>
-																	<div class="form-group">
-																			<input type="email" required class="form-control" data-placeholder="الإيميل" placeholder="Email">
-																	</div>
-																	<div class="form-group">
-																			<input type="text" required class="form-control" data-placeholder="رقم الجوال" placeholder="Phone Number">
-																	</div>
-																	<div class="text-center mt-4">
-																			<button type="submit" class="btn w-75 submit-register-btn" data-lang="تسجيل">Register</button>
-																	</div>
-															</div>
-													</form>
-													<div class="text-center mt-5" id="registerStatus"></div>
-											</div>
-											</div>
-				<!-- ========================= Report Container ========================== -->
-									<div class="chatbox__report--container p-3" id="reportContainer">
-											<button type="button" id="cancelReport" class="btn btn-clean btn-sm btn-icon btn-report-close" aria-haspopup="true" aria-expanded="false">
-											<i class="fas fa-times"></i>
-											</button>
-											<div class="chatbox__report--body p-3 pt-5">
-													<form id="submitReportChat">
-															<div class="chatbox__editor pt-4 mt-5">
-																	<textarea id="reportMessage" data-placeholder="أكتب التقرير هنا..." placeholder="Type report here..."></textarea>
-																	<div class="choices-btns">
-																			<label class="report-choices">
-																					<input type="radio" value="error" checked name="reportType" id="errorValue"> <span data-lang="خطأ">Erorr</span>
-																					<span class="custom-radio"></span>
-																			</label>
-																			<label class="report-choices">
-																					<input type="radio" value="unknown" name="reportType" id="unknownValue"> <span data-lang="غير معروف">Unknown</span>
-																					<span class="custom-radio"></span>
-																			</label>
-																	</div>
-																	<div class="text-center mt-5">
-																			<button type="submit" class="btn w-75 submit-report-btn" data-lang="إرسال التقرير">Send Report</button>
-																	</div>
-															</div>
-													</form>
-													<div class="text-center mt-5" id="reportStatus"></div>
-											</div>
-									</div>
 				<!-- ========================= Upload image Container ========================== -->
 									<div class="chatbox__upload-image--container p-3" id="uploadImgContainer">
 									<button type="button" id="cancelUploadImg" class="btn btn-clean btn-sm btn-icon btn-upload-close" aria-haspopup="true" aria-expanded="false">
 											<i class="fas fa-times"></i>
 									</button>
-									<div class="chatbox__upload-image--body pt-5">
+									<div class="chatbox__upload-image--body">
 											<div class="input-group mb-3">
 													<div class="custom-file">
 															<input type="file" accept="image/png, .gif, .jpg, .jpeg, .svg" class="custom-file-input" id="chatUploadInput">
@@ -1702,25 +1557,7 @@
 											</div>
 									</div>
 							</div>
-				<!-- ========================= Audioes ========================== -->
-									<div class="audio">
-											<audio id="msgSentAudio">
-													<!-- <source src="horse.ogg" type="audio/ogg"> -->
-													<source src="/assets/tones/new_chat.mp3" type="audio/mpeg">
-													Your browser does not support the audio element.
-											</audio>
-											<audio id="msgAnswerAudio">
-													<!-- <source src="horse.ogg" type="audio/ogg"> -->
-													<source src="/assets/tones/received_live_chat.mp3" type="audio/mpeg">
-													Your browser does not support the audio element.
-											</audio>
-									</div>
-							</div>
-					</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-outline-brand" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
 					</div>
 				</div>
 			</div>
